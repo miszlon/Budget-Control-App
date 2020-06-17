@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a8b1f8e5bf4423a86731a672c4b2ea4" Name="Diagram1">
+        <EntityTypeShape EntityType="Budget_ControlModel.Income" Width="1.5" PointX="1.75" PointY="0.5" />
+        <EntityTypeShape EntityType="Budget_ControlModel.Payment" Width="1.5" PointX="6.125" PointY="0.5" />
+        <EntityTypeShape EntityType="Budget_ControlModel.Person" Width="1.5" PointX="4" PointY="0.5" />
+        <EntityTypeShape EntityType="Budget_ControlModel.sysdiagram" Width="1.5" PointX="10" PointY="2.25" />
+        <AssociationConnector Association="Budget_ControlModel.FK_Person_Incomes" />
+        <AssociationConnector Association="Budget_ControlModel.FK_Person_Payments" />
+        <EntityTypeShape EntityType="Budget_ControlModel.ShoppingList" Width="1.5" PointX="8" PointY="0.5" />
+        <EntityTypeShape EntityType="Budget_ControlModel.Income1" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Budget_ControlModel.Payment1" Width="1.5" PointX="2.75" PointY="3.75" />
+        <AssociationConnector Association="Budget_ControlModel.FK_Income_Person" />
+        <AssociationConnector Association="Budget_ControlModel.FK_Payment_Person" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
