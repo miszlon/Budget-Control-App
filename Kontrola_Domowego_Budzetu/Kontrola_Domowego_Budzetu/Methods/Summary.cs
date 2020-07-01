@@ -197,8 +197,12 @@ namespace Kontrola_Domowego_Budzetu.Methods
             {
                 if (payment.Text != "-")
                 {
-                    decimal sum = Convert.ToDecimal(income.Text) - Convert.ToDecimal(payment.Text);
-                    moneyToSpend.Text = sum.ToString();
+                    string temp1 = incone.Text;
+                    string temp2 = payment.Text;
+                    temp1 = temp1.Substring(0,-3);
+                    temp2 = temp2.Substring(0,-3);
+                    decimal sum = Convert.ToDecimal(temp1) - Convert.ToDecimal(temp2);
+                    moneyToSpend.Text = sum.ToString() + "zł";
                 }
                 else moneyToSpend.Text = income.Text;
             }
